@@ -1,0 +1,13 @@
+from datetime import datetime
+
+class ModerationLogs:
+    def __init__(self):
+        self.log_file = 'data/logs/moderation_logs.txt'
+
+    def log_moderation_action(self, action, user_id, reason=None):
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        with open(self.log_file, 'a') as file:
+            if reason:
+                file.write(f'{timestamp} - {action} - User ID: {user_id} - Reason: {reason}\n')
+            else:
+                file.write(f'{timestamp} - {action} - User ID: {user_id}\n')
