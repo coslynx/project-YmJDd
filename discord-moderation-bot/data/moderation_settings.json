@@ -1,0 +1,55 @@
+{
+  "moderation_settings": {
+    "auto_moderation": {
+      "filter_level": "high",
+      "spam_detection": true,
+      "profanity_filter": true,
+      "spam_prevention": true
+    },
+    "user_actions": {
+      "warn_threshold": 3,
+      "mute_duration": "24 hours",
+      "kick_threshold": 5,
+      "ban_threshold": 10
+    },
+    "admin_commands": {
+      "log_actions": true,
+      "custom_commands": true,
+      "role_management": true
+    },
+    "role_assignment": {
+      "behavior_roles": {
+        "positive": "Member",
+        "negative": "Muted"
+      }
+    },
+    "user_activity_tracking": {
+      "activity_logs": true,
+      "report_generation": true
+    },
+    "automated_messages": {
+      "scheduled_messages": true,
+      "announcement_channel": "announcements"
+    },
+    "voting_system": {
+      "voting_channel": "voting",
+      "vote_threshold": 50
+    },
+    "spam_prevention": {
+      "max_message_count": 5,
+      "spam_action": "mute"
+    },
+    "profanity_filter": {
+      "custom_words": [
+        "badword1",
+        "badword2"
+      ]
+    },
+    "reputation_system": {
+      "reputation_points": {
+        "positive": 10,
+        "negative": -5
+      }
+    }
+  }
+}
